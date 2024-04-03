@@ -1,9 +1,9 @@
 ## Project Cloud Alexandre Dissi 
 
 ### Mastere Dev C - 2024
+[image](public/screen.png)
 
-#### 1. Introduction 
-
+#### 1. Introduction
 Le but de se projet est de mettre en place une plateforme qui permet de creer des machines virtuelles sur le cloud uniquement si l'on est connecté à l'application via un login et un mot de passe.
 
 Pour se faire nous allons utiliser les technologies suivantes :
@@ -39,7 +39,7 @@ Cela va installer toutes les dependance necessaire au projet pour fonctionner.
 A la suite de cela creer un fichier environnement a la racine du projet avec la commande suivante
     
 ```bash
-    touch .env
+touch .env
 ```
 
 Dans ce fichier .env ajouter les variables d'environnement suivantes :
@@ -60,6 +60,7 @@ Pour la variable NEXTAUTH_SECRET vous pouvez generer une clé en utilisant la co
 ```bash
 openssl rand -base64 32
 ```
+**TRES IMPORTANT DE BIEN GENERER LA CLE NEXTAUTH_SECRET CAR CELLE CI EST UTILISE POUR CHIFFRER LES COOKIES DE SESSION.**
 
 Copier la clé générée et coller la dans la variable d'environnement NEXTAUTH_SECRET.
 
