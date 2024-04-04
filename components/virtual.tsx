@@ -2,9 +2,8 @@ import {useSession} from "next-auth/react";
 import {FaDebian, FaUbuntu, FaWindows} from "react-icons/fa6";
 import {ConfirmedUser} from "@/interface/User";
 import {useEffect, useState} from "react";
-import toast from "react-hot-toast";
-import {router} from "next/client";
 import {useRouter} from "next/navigation";
+import {toast} from "sonner";
 
 export default function Virtual() {
     const [loading, setLoading] = useState(false);
